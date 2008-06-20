@@ -1,0 +1,6 @@
+input.ezcca-error,
+textarea.ezcca-error {
+   background-color: #C00; 
+   background-image: none  !important;
+   color: #fff; 
+}
