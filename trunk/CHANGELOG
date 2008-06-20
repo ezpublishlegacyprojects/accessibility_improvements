@@ -1,0 +1,128 @@
+eZ datatype edit accessibility changes
+======================================
+BPM 14 March 2008
+
+Simple
+------
+
+ezstring.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added ezccat-ezstring class
+    * Removed size - set in CSS
+
+eztext.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added ezccat-eztext class
+
+ezkeyword.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added ezccat-ezkeyword class
+    * Removed size - set in CSS
+
+ezboolean.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added ezccat-ezboolean class
+
+ezinteger.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added ezccat-ezinteger class
+    * Removed size - set in CSS
+
+ezfloat.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added ezccat-ezfloat class
+    * Removed size - set in CSS
+
+Date Time
+ezemail.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added ezccat-ezemail class
+    * Removed size - set in CSS
+
+ezdatetime.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added for attribute to labels
+
+eztime.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added for attribute to labels
+
+Others
+ezrangeoption.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added for attribute to labels
+
+
+ezurl.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added for attribute to labels
+    * Removed size - set in CSS
+
+ezuser.tpl
+
+    * Added ezcca-required class if attribute is required, password & password_confirm  only required if GeneratePasswordIfEmpty != true
+    * Added for attribute to labels
+    * Removed size - set in CSS
+
+Validation Notes:
+
+Password: If [UserSettings] GeneratePasswordIfEmpty = true empty passwords are allowed and one is generated.  Only comes into play if the password is blank.
+Password Length:  Stored in [UserSettings] MinPasswordLength or default to 3 if not present (in ezuser datatype)
+Password cannot be set to "password"
+Passwords must match
+
+Email: Must be valid email
+Email: If the email can be used for Authentication the email address must be unique
+
+Login: must be unique
+Login: cannot be empty
+
+
+ezselection.tpl
+
+    * Added ezcca-required class if attribute is required
+    * Added ezccat-ezselection class
+
+
+ezoption.tpl
+
+    * Added for attribute to labels
+
+ezauthor.tpl
+
+    * nothing
+
+ezbinaryfile.tpl
+
+    * Added for attribute to labels
+
+ezcountry.tpl
+
+    * nothing
+
+ezenum.tpl
+
+    * Added for attribute to labels
+
+ezimage.tpl
+
+    * Added for attribute to labels
+
+ezinisetting.tpl
+
+    * Need to see interface - too complex
+
+ezisbn.tpl
+
+    * Need to see inteface and understand data
